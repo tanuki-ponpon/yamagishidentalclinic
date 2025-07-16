@@ -1,10 +1,109 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>山岸歯科医院</title>
-  </head>
-  <body>
-    <h1>ようこそ 山岸歯科医院へ 🦷</h1>
-  </body>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>山岸歯科医院</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #b3e5fc;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      border-radius: 0 0 16px 16px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: #01579b;
+    }
+    section {
+      background: white;
+      margin: 1rem auto;
+      padding: 1.5rem;
+      max-width: 700px;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    h2 {
+      color: #0277bd;
+      border-bottom: 2px solid #81d4fa;
+      padding-bottom: 0.5rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    td, th {
+      border: 1px solid #ccc;
+      padding: 0.5rem;
+      text-align: center;
+    }
+    .map {
+      width: 100%;
+      height: 300px;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+    @media screen and (max-width: 600px) {
+      body, section {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>山岸歯科医院</h1>
+    <p>地域の皆様に安心と笑顔を届けます</p>
+  </header>
+
+  <section>
+    <h2>院長ごあいさつ</h2>
+    <p>こんにちは。山岸歯科医院の院長、山田由美子です。患者さま一人ひとりに寄り添い、安心・丁寧な診療を心がけています。</p>
+  </section>
+
+  <section>
+    <h2>診療科目</h2>
+    <p>歯科・矯正歯科・小児歯科</p>
+    <p style="font-weight:bold; color:#d84315;">訪問診療にも対応しております。ご自宅での診療をご希望の方はご相談ください。</p>
+  </section>
+
+  <section>
+    <h2>診療時間</h2>
+    <table>
+      <tr>
+        <th>時間</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th>土</th><th>日・祝</th>
+      </tr>
+      <tr>
+        <td>9:30〜12:00</td><td>●</td><td>●</td><td>－</td><td>●</td><td>●</td><td>●</td><td>－</td>
+      </tr>
+      <tr>
+        <td>13:30〜18:00</td><td>●</td><td>●</td><td>－</td><td>●</td><td>●</td><td>－</td><td>－</td>
+      </tr>
+    </table>
+    <p>※土曜は午前診療のみ／予約制／臨時休診あり</p>
+  </section>
+
+  <section>
+    <h2>アクセス</h2>
+    <p>〒111-0051 東京都台東区蔵前3丁目20-1 山岸ビル</p>
+    <p>都営大江戸線「蔵前駅」より徒歩3分／近隣にコインパーキングあり</p>
+    <iframe class="map" src="https://www.google.com/maps?q=東京都台東区蔵前3丁目20-1&output=embed" loading="lazy"></iframe>
+  </section>
+
+  <section>
+    <h2>お問い合わせ</h2>
+    <p><strong>電話番号：</strong>03-3851-1718</p>
+    <p><strong>休診日：</strong>水曜・日曜・祝日</p>
+  </section>
+</body>
 </html>
